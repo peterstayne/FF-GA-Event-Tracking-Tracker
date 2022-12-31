@@ -160,7 +160,7 @@
                         return;
                     }
                     // console.log(i);
-                    if(typeof i.url != 'undefined' && i.url && i.url.substr(0,10) != 'chrome-ext') {
+                    if(typeof i.url != 'undefined' && i.url && i.url.substr(0,10) != 'chrome-ext' && i.url.substr(0,7) != 'moz-ext') {
                         let title = i.title;
                         if(title.length > 20) title = title.substr(0,18) + '...'
                         tabhtml += '<a href="#" class="tab ';
